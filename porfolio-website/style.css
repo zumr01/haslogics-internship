@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 /**************************************************
  Import Google Fonts
 ***************************************************/
@@ -15,6 +18,7 @@
 
 body {
   background-color: rgb(185, 185, 185);
+  overflow-x: hidden;
 }
 
 h1,
@@ -26,7 +30,7 @@ h2 {
 a {
   font-family: "Poppins", sans-serif;
   color: #f0f0f0;
-  font-weight: 700;
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -79,14 +83,97 @@ header {
   color: #be3144;
   font-size: 2rem;
   font-weight: 200;
+  padding-top: 5px;
 }
 
 /**************************************************
  Project Section
 ***************************************************/
+.project-section {
+  background-color: #45567d;
+  width: 100%;
+}
+
+.project-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 0 1rem 0;
+}
+
+.project-head h1 {
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.project-head hr {
+  width: 43%;
+  max-width: 43%;
+  background-color: #f0f0f0;
+  margin-top: 6px;
+}
+
+.projects-flex {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 5rem 0 5rem;
+}
+
+.projects-flex img {
+  width: 400px;
+  height: 380px;
+  object-fit: cover;
+}
+
+.project-title {
+  background-color: #303841;
+  text-align: center;
+  margin-top: -7px;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.project-title .special-symbol {
+  color: #303841;
+  transition: color 0.3s ease-out;
+}
+
+.projects-flex a:hover .special-symbol {
+  color: rgb(255, 119, 0);
+}
+
+.project-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn-show-all {
+  background-color: #303841;
+  border: 0;
+  color: #f0f0f0;
+  font-size: 1.25rem;
+  width: 100%;
+  padding: 10px 20px;
+}
+.btn-show-all:hover {
+  background-color: #be3144;
+  color: #f0f0f0;
+  transition: background 0.3s ease-in;
+}
+
+.project-btn a span:hover {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
+/* border: 2px solid rgb(228, 59, 29); */
+/* border: 2px solid peru; */
 
 /**************************************************
- Contact Section
+Contact Section
 ***************************************************/
 /**************************************************
  Footer
