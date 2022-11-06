@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/25d8a69619.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!--========== Header STARTS ==========-->
     <header>
       <nav>
         <ul class="nav-links">
-          <li><a href="#about-section">About</a></li>
-          <li><a href="#project-section">Work</a></li>
-          <li><a href="#">Contact</a></li>
+          <a href="#about-section"><li>About</li></a>
+          <a href="#project-section"><li>Work</li></a>
+          <a href="#contact-section"><li>Contact</li></a>
         </ul>
       </nav>
     </header>
@@ -33,91 +37,123 @@
         <h1>These are some of my projects</h1>
         <hr />
       </div>
-      <div class="projects-flex">
+      <div class="projects-box">
         <a
           href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/AHmadKhalil97/internship-data/master/tribute_page/index.html"
           target="_blank"
+          class="project-details"
         >
           <img src="imgs/work-1.jpg" alt="" />
           <p class="project-title">
-            <span class="special-symbol">&#60;</span>
-            Tribute Page
-            <span class="special-symbol">/></span>
+            <i class="fa-sharp fa-solid fa-angle-left"></i>
+            Tribute Page <i class="fa-sharp">/</i><i class="fa-sharp fa-solid fa-angle-right"></i>
+          </p>
           </p></a
         >
 
         <a
           href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/AHmadKhalil97/internship-data/master/tribute_page/index.html"
-          target="_blank"
+          target="_blank" class="project-details"
         >
           <img src="imgs/work-2.png" alt="" />
           <p class="project-title">
-            <span class="special-symbol">&#60;</span> Random Quote Machine
-            <span class="special-symbol">/></span>
+            <i class="fa-sharp fa-solid fa-angle-left"></i>
+            Random Quote Machine <i class="fa-sharp">/</i><i class="fa-sharp fa-solid fa-angle-right"></i>
           </p></a
         >
 
         <a
           href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/AHmadKhalil97/internship-data/master/tribute_page/index.html"
-          target="_blank"
+          target="_blank" class="project-details"
         >
           <img src="imgs/work-3.png" alt="" />
           <p class="project-title">
-            <span class="special-symbol">&#60;</span> JavaScript Calculator
-            <span class="special-symbol">/></span>
+            <i class="fa-sharp fa-solid fa-angle-left"></i>
+            JavaScript Calculator <i class="fa-sharp">/</i><i class="fa-sharp fa-solid fa-angle-right"></i>
           </p></a
         >
       </div>
-      <div class="projects-flex">
+      <div class="projects-box">
         <a
           href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/AHmadKhalil97/internship-data/master/tribute_page/index.html"
-          target="_blank"
+          target="_blank" class="project-details"
         >
           <img src="imgs/work-4.jpg" alt="" />
           <p class="project-title">
-            <span class="special-symbol">&#60;</span> Map Data Across the Globe
-            <span class="special-symbol">/></span>
+            <i class="fa-sharp fa-solid fa-angle-left"></i>
+            Map Data Across the Globe <i class="fa-sharp">/</i><i class="fa-sharp fa-solid fa-angle-right"></i>
           </p></a
         >
 
         <a
           href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/AHmadKhalil97/internship-data/master/tribute_page/index.html"
-          target="_blank"
+          target="_blank" class="project-details"
         >
           <img src="imgs/work-5.png" alt="" />
           <p class="project-title">
-            <span class="special-symbol">&#60;</span> Wikipedia Viewer
-            <span class="special-symbol">/></span>
+            <i class="fa-sharp fa-solid fa-angle-left"></i>
+            Wikipedia Viewer <i class="fa-sharp">/</i><i class="fa-sharp fa-solid fa-angle-right"></i>
           </p></a
         >
 
         <a
           href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/AHmadKhalil97/internship-data/master/tribute_page/index.html"
-          target="_blank"
+          target="_blank" class="project-details"
         >
           <img src="imgs/work-6.png" alt="" />
           <p class="project-title">
-            <span class="special-symbol">&#60;</span> Tic Tac Toe Game
-            <span class="special-symbol">/></span>
+            <i class="fa-sharp fa-solid fa-angle-left"></i>
+            Tic Tac Toe Game <i class="fa-sharp">/</i><i class="fa-sharp fa-solid fa-angle-right"></i>
           </p></a
         >
       </div>
       <div class="project-btn">
-        <a href="https://codepen.io/FreeCodeCamp/" target="_blank"
-          ><button class="btn-show-all">
-            Show all <span>&#10093;</span>
-          </button></a
+        <a
+          href="https://codepen.io/FreeCodeCamp/"
+          target="_blank"
+          class="btn-show-all"
+          >Show all<i class="fa-sharp fa-solid fa-angle-right"></i></a
         >
       </div>
     </section>
     <!-- Project Section END! -->
 
     <!--========== Contact Section STARTS ==========-->
-    <section></section>
+    <section id="contact-section" class="contact-section">
+      <!-- <div class="contact-head"> -->
+        <h1>Let's work together...</h1>
+        <p>How do you take your coffee?</p>
+      <!-- </div> -->
+      <div class="contact-links">
+        <a href="https://www.facebook.com/freecodecamp" target="_blank" class="btn-contact-details">
+          <i class="fa-brands fa-square-facebook"></i>
+          Facebook
+        </a>
+        <a href="https://github.com/freecodecamp" target="_blank" class="btn-contact-details">
+          <i class="fa-brands fa-github"></i>
+          GitHub
+        </a>
+        <a href="https://twitter.com/freecodecamp" target="_blank" class="btn-contact-details">
+          <i class="fa-brands fa-twitter"></i>
+          Twitter
+        </a>
+        <a href="#" class="btn-contact-details">
+          <i class="fa-solid fa-at"></i>
+          Send a mail
+        </a>
+        <a href="#" class="btn-contact-details">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          Call me
+        </a>
+      </div>
+    </section>
     <!-- Contact Section END! -->
 
     <!--========== Footer STARTS ==========-->
-    <footer></footer>
+    <footer id="footer" class="footer">
+      <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+      <p><a href="">© Created for freeCodeCamp</a></p>
+    </footer>
     <!-- Footer END! -->
   </body>
 </html>
