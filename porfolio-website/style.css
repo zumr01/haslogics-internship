@@ -55,7 +55,6 @@ header {
   padding: 0 24px 0 0;
   box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
   position: fixed;
-  width: 100%;
 }
 
 .nav-links li {
@@ -71,11 +70,21 @@ header {
   font-size: 1.3rem;
 }
 
+@media (max-width: 1440px) {
+  #header {
+    width: 100%;
+    /* position: fixed; */
+    /* box-sizing: inherit; */
+    /* background-color: aqua; */
+    /* overflow-x: hidden; */
+  }
+}
+
 /**************************************************
  About Section
 ***************************************************/
 
-.about-section {
+/* .about-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,12 +97,12 @@ header {
 .about-section h1 {
   font-size: 4rem;
   font-weight: 700;
-}
+} */
 
 /**************************************************
  Project Section
 ***************************************************/
-.project-section {
+/* .project-section {
   background-color: #45567d;
   width: 100%;
 }
@@ -152,13 +161,10 @@ header {
 .project-btn {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   padding: 4rem 0;
-  /* margin-top: 2rem; */
 }
 
 .btn-show-all {
-  /* border: 2px solid rebeccapurple; */
   display: flex;
   align-items: center;
   background-color: #303841;
@@ -182,12 +188,12 @@ header {
   margin-left: 5px;
   transform: translateX(0);
   transition: 0.3s ease-out;
-}
+} */
 
 /**************************************************
 Contact Section
 ***************************************************/
-.contact-section {
+/* .contact-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -228,7 +234,7 @@ Contact Section
   margin-top: 1rem;
   transform: translateX(0);
   transition: 0.3s ease-out;
-}
+} */
 
 /**************************************************
 Footer
@@ -236,7 +242,7 @@ Footer
 /* border: 2px solid rgb(228, 59, 29); */
 /* border: 2px solid peru; */
 
-.footer {
+/* .footer {
   background-color: #303841;
   display: flex;
   flex-direction: row;
@@ -251,4 +257,4 @@ Footer
   font-style: normal;
   color: #f0f0f0;
   font-weight: 300;
-}
+} */
