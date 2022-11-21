@@ -14,30 +14,36 @@
   <body>
     <!--========== Header STARTS ==========-->
     <header id="header">
-      <nav>
-        <ul class="nav-links">
-          <a href="#about-section"><li>About</li></a>
-          <a href="#project-section"><li>Work</li></a>
-          <a href="#contact-section"><li>Contact</li></a>
-        </ul>
-      </nav>
+      <div class="header-left">
+        <a href="#">Demo logo</a>
+      </div>
+      <div class="header-right">
+        <a href="#"><i class="fa-sharp fa-solid fa-bars nav-icon"></i></a>
+        <nav class="nav-links">
+          <ul>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#project-section">Work</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- Header END! -->
 
     <!--========== About Section STARTS ==========-->
-    <!-- <section id="about-section" class="about-section">
+    <section id="about-section" class="about-section">
       <h1>Hey I am Mimic</h1>
       <p>a web developer</p>
-    </section> -->
+    </section>
     <!-- About Section END! -->
 
     <!--========== Project Section STARTS ==========-->
-    <!-- <section id="project-section" class="project-section">
+    <section id="project-section" class="project-section">
       <div class="project-head">
         <h1>These are some of my projects</h1>
         <hr />
       </div>
-      <div class="projects-box">
+      <div class="projects-grid">
         <a
           href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/AHmadKhalil97/internship-data/master/tribute_page/index.html"
           target="_blank"
@@ -48,8 +54,8 @@
             <i class="fa-sharp fa-solid fa-angle-left"></i>
             Tribute Page <i class="fa-sharp">/</i><i class="fa-sharp fa-solid fa-angle-right"></i>
           </p>
-          </p></a
-        >
+          </p>
+          </a>
 
         <a
           href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/AHmadKhalil97/internship-data/master/tribute_page/index.html"
@@ -72,8 +78,7 @@
             JavaScript Calculator <i class="fa-sharp">/</i><i class="fa-sharp fa-solid fa-angle-right"></i>
           </p></a
         >
-      </div>
-      <div class="projects-box">
+
         <a
           href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/AHmadKhalil97/internship-data/master/tribute_page/index.html"
           target="_blank" class="project-details"
@@ -115,18 +120,20 @@
           >Show all<i class="fa-sharp fa-solid fa-angle-right"></i></a
         >
       </div>
-    </section> -->
+    </section>
     <!-- Project Section END! -->
 
     <!--========== Contact Section STARTS ==========-->
-    <!-- <section id="contact-section" class="contact-section">
+    <section id="contact-section" class="contact-section">
+      <div class="contact-section-head">
       <h1>Let's work together...</h1>
       <p>How do you take your coffee?</p>
+    </div>
       <div class="contact-links">
         <a
-          href="https://www.facebook.com/freecodecamp"
+          href="https://www.facebook.com/freecodecamp" class="btn-contact-details"
           target="_blank"
-          class="btn-contact-details"
+
         >
           <i class="fa-brands fa-square-facebook"></i>
           Facebook
@@ -156,17 +163,18 @@
           Call me
         </a>
       </div>
-    </section> -->
+    </section>
     <!-- Contact Section END! -->
 
     <!--========== Footer STARTS ==========-->
-    <!-- <footer id="footer" class="footer">
+    <footer id="footer" class="footer">
       <p>
         **This is just a fake portfolio. All the projects and contact details
         given are not real.
       </p>
       <p><a href="">© Created for freeCodeCamp</a></p>
-    </footer> -->
+    </footer>
     <!-- Footer END! -->
+    <script src="/porfolio-website/script.js"></script>
   </body>
 </html>
