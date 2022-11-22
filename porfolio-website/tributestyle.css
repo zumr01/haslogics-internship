@@ -1,0 +1,243 @@
+html {
+  scroll-behavior: smooth;
+}
+/**************************************************
+   Import Google Fonts
+  ***************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/**************************************************
+   CSS reset 
+  ***************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/* p {
+} */
+
+a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+/**************************************************
+   Tribute Section Css
+***************************************************/
+.tribute-section {
+  background-color: #f0f0f0;
+  margin: 2.5rem 10px;
+  border-radius: 4px;
+}
+
+.container {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.container h1 {
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+  font-size: 3rem;
+  padding: 3rem 0 1.5rem 0;
+  font-weight: 700;
+}
+
+.container p {
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+  font-size: 1rem;
+  font-weight: 100;
+  padding-bottom: 1rem;
+}
+
+.img-bg {
+  margin: 0 1rem;
+  padding: 2rem 0 0 0;
+  background-color: #ffffff;
+}
+
+.img-bg p {
+  padding-top: 1rem;
+}
+
+.container h2 {
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+  margin: 4rem 0;
+  font-size: 19px;
+}
+
+.timeline-container {
+  text-align: center;
+}
+
+.list-container {
+  margin: 0 444px;
+}
+
+.list-container ul {
+  text-align: left;
+}
+
+.list-container li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  line-height: 1.6;
+  margin: 1rem 0;
+  color: #333333;
+}
+
+.list-container li span {
+  font-weight: bold;
+}
+
+.quote p {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  text-align: left;
+  margin: 50px 500px 50px 423px;
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+/**************************************************
+   Media query
+***************************************************/
+
+@media (max-width: 1024px) {
+  .container h1 {
+    font-size: 2rem;
+  }
+
+  .container p {
+    font-size: 0.8rem;
+  }
+
+  .img-bg img {
+    width: 80%;
+    object-fit: cover;
+  }
+
+  .list-container {
+    margin: 0 218px;
+  }
+
+  .quote p {
+    margin: 50px 300px 50px 200px;
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container h1 {
+    font-size: 2rem;
+  }
+
+  .container p {
+    font-size: 0.8rem;
+  }
+
+  .img-bg img {
+    width: 70%;
+    object-fit: cover;
+  }
+
+  .img-bg p {
+    margin: 0 8rem;
+    line-height: 1.5;
+  }
+
+  .list-container {
+    margin: 0 70px;
+  }
+
+  .quote p {
+    margin: 50px 200px 50px 57px;
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 426px) {
+  .container h1 {
+    font-size: 1.5rem;
+  }
+
+  .container p {
+    font-size: 0.7rem;
+  }
+
+  .img-bg img {
+    width: 85%;
+    object-fit: cover;
+  }
+
+  .img-bg p {
+    margin: 0 2rem;
+    line-height: 1.5;
+  }
+
+  .container h2 {
+    font-size: 1rem;
+  }
+
+  .list-container {
+    margin: 0 50px;
+    font-size: 14px;
+  }
+
+  .quote p {
+    margin: 50px 60px 50px 30px;
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 426px) {
+  .container h2 {
+    font-size: 0.8rem;
+    margin: 2rem 0;
+  }
+
+  .list-container {
+    margin: 0 30px;
+    font-size: 12px;
+  }
+
+  .quote p {
+    margin: 30px 30px 30px 30px;
+    font-size: 12px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+}
