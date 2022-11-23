@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Machine</title>
+    <link rel="stylesheet" href="random-quote-machine.css" />
+    <!-- <script
+      src="https://kit.fontawesome.com/25d8a69619.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="random-quote-machine">
+      <div class="container">
+        <div class="quote-box">
+          <p class="text">
+            <i id="quote-mark" class="fa-solid fa-quote-left"></i>
+            <span id="text"></span>
+          </p>
+        </div>
+        <div class="quote-author">
+          <p>-</p>
+          <span id="author"></span>
+          <!-- // Charles Dickens -->
+        </div>
+        <div class="social-icon">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-tumblr"></i>
+          <button id="new-quote" class="btn-next">New Quote</button>
+        </div>
+      </div>
+    </section>
+    <script src="random-quote-machine.js"></script>
+  </body>
+</html>

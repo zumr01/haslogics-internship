@@ -1,0 +1,117 @@
+html {
+  scroll-behavior: smooth;
+}
+/**************************************************
+     Import Google Fonts
+    ***************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/**************************************************
+     CSS reset 
+    ***************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2e1c1f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+.random-quote-machine {
+  /* border: 2px solid yellow; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #f0f0f0;
+  width: 40%;
+  height: auto;
+  border-radius: 4px;
+  padding: 2rem 3rem;
+  position: relative;
+}
+
+.quote-box {
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  /* border: 2px solid aqua; */
+  width: auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+}
+
+.fa-quote-left {
+  font-size: 1.7rem;
+  color: #2e1c1f;
+}
+
+.quote-author {
+  font-family: "Poppins", sans-serif;
+  text-align: right;
+  padding-top: 1rem;
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+  display: flex;
+  justify-content: end;
+}
+
+.quote-author span {
+  margin-left: 5px;
+}
+
+.social-icon {
+  font-size: 2rem;
+  position: relative;
+  margin-top: 30px;
+}
+
+.fa-twitter,
+.fa-tumblr {
+  color: #2e1c1f;
+  margin-right: 7px;
+}
+
+.btn-next {
+  font-family: "Poppins", sans-serif;
+  text-align: right;
+  padding: 10px 14px;
+  font-size: 14px;
+  background-color: #2e1c1f;
+  color: #f0f0f0;
+  border-radius: 4px;
+  position: absolute;
+  top: -3px;
+  right: 0;
+  /* bottom: 0; */
+}
+
+/* .hidden {
+  display: none;
+} */
