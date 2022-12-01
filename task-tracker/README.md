@@ -1,6 +1,27 @@
 # Task Tracker App
 
-It includes the react ui as well as JSON-server for our mock backend
+Simple task tracking app that allow you to schedule tasks and appointments on a specific day and set reminder for each task.
+
+## Basic Features
+
+- Add task
+- Delete task
+- Double click on the task to set reminder
+- Save task
+
+## Technologies Used
+
+- HTML
+- CSS
+- React
+
+## Packages Used
+
+- react-router-dom
+
+## Moc Backend
+
+- JSON server
 
 ## Usage
 
