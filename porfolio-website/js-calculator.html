@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="js-calculator.css" />
+  </head>
+  <body>
+    <main class="body-bg">
+      <!--========== Calculator Section STARTS ==========-->
+      <section class="calculator">
+        <div class="display-screen">
+          <div class="history">
+            <p id="history"></p>
+          </div>
+          <div class="output"><p id="output">0</p></div>
+        </div>
+        <div class="input-pad">
+          <button id="clear" class="button item-ac" value="AC">AC</button>
+          <button id="divide" class="button item-divide" value="/">/</button>
+          <button id="multiply" class="button item-multiply" value="*">
+            X
+          </button>
+          <button id="seven" class="button item-7" value="7">7</button>
+          <button id="eight" class="button item-8" value="8">8</button>
+          <button id="nine" class="button item-9" value="9">9</button>
+          <button id="subtract" class="button item-subtract" value="-">
+            -
+          </button>
+          <button id="four" class="button item-4" value="4">4</button>
+          <button id="five" class="button item-5" value="5">5</button>
+          <button id="six" class="button item-6" value="6">6</button>
+          <button id="addition" class="button item-addition" value="+">
+            +
+          </button>
+          <button id="one" class="button item-1" value="1">1</button>
+          <button id="two" class="button item-2" value="2">2</button>
+          <button id="three" class="button item-3" value="3">3</button>
+          <button id="equal" class="button item-equal" value="=">=</button>
+          <button
+            id="decimal-point"
+            class="button item-decimal-point"
+            value="."
+          >
+            .
+          </button>
+          <button id="zero" class="button item-0" value="0">0</button>
+        </div>
+      </section>
+      <!-- Calculator Section END! -->
+    </main>
+    <script src="js-calculator.js"></script>
+  </body>
+</html>

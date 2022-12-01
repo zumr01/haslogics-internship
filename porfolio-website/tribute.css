@@ -2,15 +2,15 @@ html {
   scroll-behavior: smooth;
 }
 /**************************************************
-   Import Google Fonts
-  ***************************************************/
+ Import Google Fonts
+***************************************************/
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 /**************************************************
-   CSS reset 
-  ***************************************************/
+ CSS reset 
+***************************************************/
 * {
   margin: 0;
   padding: 0;
@@ -36,7 +36,7 @@ a {
 }
 
 /**************************************************
-   Tribute Section Css
+ Tribute Section
 ***************************************************/
 .tribute-section {
   background-color: #f0f0f0;
@@ -116,7 +116,7 @@ a {
 }
 
 /**************************************************
-   Media query
+   Media Query for Responsiveness
 ***************************************************/
 
 @media (max-width: 1024px) {
