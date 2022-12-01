@@ -1,5 +1,7 @@
 # Task Tracker App
 
+### Live Demo
+
 <img src="https://github.com/zumr01/haslogics-internship/blob/main/task-tracker/thumbnail.gif" alt="Demo image"/>
 
 Simple task tracking app that allow you to schedule tasks and appointments on a specific day and set reminder for each task.
