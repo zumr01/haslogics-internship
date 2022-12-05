@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Tasks from "./components/Tasks";
-import AddTask from "./components/AddTask";
-import About from "./components/About";
+import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Tasks from './components/Tasks';
+import AddTask from './components/AddTask';
+import About from './components/About';
 // import { router } from "json-server";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
 
   // Fetch Tasks
   const fetchTasks = async () => {
-    const response = await fetch("http://localhost:5000/tasks");
+    const response = await fetch('http://localhost:5000/tasks');
     const data = await response.json();
     return data;
   };
@@ -37,10 +37,10 @@ function App() {
 
   // Add Task
   const addTask = async (task) => {
-    const response = await fetch("http://localhost:5000/tasks", {
-      method: "POST",
+    const response = await fetch('http://localhost:5000/tasks', {
+      method: 'POST',
       headers: {
-        "Content-type": "application/json",
+        'Content-type': 'application/json',
       },
       body: JSON.stringify(task),
     });
@@ -53,7 +53,7 @@ function App() {
   // Delete Task
   const deleteTask = async (id) => {
     await fetch(`http://localhost:5000/tasks/${id}`, {
-      method: "DELETE",
+      method: 'DELETE',
     });
 
     setTasks(tasks.filter((task) => task.id !== id));
@@ -65,9 +65,9 @@ function App() {
     const updateTask = { ...taskToToggle, reminder: !taskToToggle.reminder };
 
     const response = await fetch(`http://localhost:5000/tasks/${id}`, {
-      method: "PUT",
+      method: 'PUT',
       headers: {
-        "Content-type": "application/json",
+        'Content-type': 'application/json',
       },
       body: JSON.stringify(updateTask),
     });
@@ -85,7 +85,7 @@ function App() {
 
   return (
     <Router>
-      <div className="container">
+      <div className='container'>
         <Header
           onAdd={() => setShowAddTask(!showAddTask)}
           showAdd={showAddTask}
@@ -93,8 +93,7 @@ function App() {
 
         <Routes>
           <Route
-            path="/"
-            exact
+            path='/'
             element={
               <>
                 {showAddTask && <AddTask onAdd={addTask} />}
@@ -105,12 +104,15 @@ function App() {
                     onToggle={toggleReminder}
                   />
                 ) : (
-                  "No Task To Show"
+                  'No Task To Show'
                 )}
               </>
             }
           />
-          <Route path="/about" element={<About />} />
+          <Route
+            path='/about'
+            element={<About />}
+          />
         </Routes>
         <Footer />
       </div>
