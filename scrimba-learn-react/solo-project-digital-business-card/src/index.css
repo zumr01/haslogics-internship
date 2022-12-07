@@ -1,0 +1,229 @@
+/**************************************************
+ CSS reset 
+***************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  background-color: #23252c;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  color: #f5f5f5;
+}
+
+/**************************************************
+ Main App 
+***************************************************/
+.App {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/**************************************************
+ Card
+***************************************************/
+
+.card-container {
+  background-color: #1a1b21;
+  width: 22%;
+  margin: 1rem 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .card-container {
+    border-radius: 18px;
+    width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    width: 40%;
+  }
+}
+
+@media (max-width: 426px) {
+  .card-container {
+    border-radius: 20px;
+    width: 75%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 376px) {
+  .card-container {
+    border-radius: 20px;
+    width: 85%;
+  }
+}
+
+/**************************************************
+Cover Image component
+***************************************************/
+
+.cover-image {
+  width: 100%;
+}
+
+/**************************************************
+Info component
+***************************************************/
+.info-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.info-title {
+  font-size: 28px;
+  padding-top: 1rem;
+}
+
+.info-skill {
+  font-size: 11px;
+  color: #f3bf99;
+  font-weight: 400;
+}
+
+.info-at {
+  font-size: 10px;
+  color: #f5f5f5;
+  padding-top: 10px;
+}
+
+.info-link {
+  text-decoration: none;
+  color: #f5f5f5;
+  padding-left: 5px;
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .info-title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 426px) {
+  .info-title {
+    font-size: 28px;
+    padding-top: 1rem;
+  }
+}
+
+/**************************************************
+Button component
+***************************************************/
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 28px 0 28px;
+}
+
+button {
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.social-icon {
+  padding-right: 5px;
+  font-size: 1rem;
+}
+
+.btn-email {
+  border-color: #dad1db;
+  color: rgb(23, 23, 23);
+}
+
+.btn-linkedin {
+  background-color: #5093e2;
+  border-color: #5093e2;
+  color: #fff;
+}
+
+@media (max-width: 320px) {
+  .button-container {
+    padding: 20px 14px 0 14px;
+  }
+}
+
+/**************************************************
+About component
+***************************************************/
+.about-container {
+  padding: 2rem 2.5rem 1rem 2.5rem;
+}
+
+.about-title {
+  font-size: 1rem;
+}
+
+.about-p {
+  font-size: 10px;
+  font-weight: 400px;
+  color: #dcdcdc;
+  line-height: 1rem;
+  padding-top: 8px;
+}
+
+@media (max-width: 320px) {
+  .about-container {
+    padding: 2rem 1.8rem 1rem 1.8rem;
+  }
+}
+
+/**************************************************
+Interest component
+***************************************************/
+.interest-container {
+  padding: 0.6rem 2.5rem 2rem 2.5rem;
+}
+
+.interest-title {
+  font-size: 1rem;
+}
+
+.interest-p {
+  font-size: 10px;
+  font-weight: 400px;
+  color: #dcdcdc;
+  line-height: 1rem;
+  padding-top: 8px;
+}
+
+@media (max-width: 320px) {
+  .interest-container {
+    padding: 0.6rem 1.8rem 1.5rem 1.8rem;
+  }
+}
+
+/**************************************************
+Interest component
+***************************************************/
+.footer-container {
+  padding: 1.5rem 2rem;
+  background-color: #161619;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.icons {
+  font-size: 2rem;
+  color: #918e9b;
+}
+
+@media (max-width: 320px) {
+  .footer-container {
+    padding: 1rem 2rem;
+  }
+}
