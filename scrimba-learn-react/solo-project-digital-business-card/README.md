@@ -4,7 +4,7 @@ A business card identifying a person in connection with his or her business, giv
 
 ## <a href='https://astounding-marzipan-f7e082.netlify.app/'>Live Demo</a>
 
-<img src="" alt="Demo image"/>
+<img src="https://github.com/zumr01/haslogics-internship/blob/main/scrimba-learn-react/solo-project-digital-business-card/business-ss.png" alt="Demo image"/>
 
 ## Basic needs for busniess card
 
