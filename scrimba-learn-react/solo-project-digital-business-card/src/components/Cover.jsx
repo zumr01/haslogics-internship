@@ -1,10 +1,10 @@
 import React from 'react';
-import image from './business.jpg';
+import image from '../assets/zain.jpg';
 const Cover = () => {
   return (
-    <div className='image-container'>
+    <div className='cover-container'>
       <img
-        className='cover-image'
+        className='cover-img'
         src={image}
         alt='img'
       />
