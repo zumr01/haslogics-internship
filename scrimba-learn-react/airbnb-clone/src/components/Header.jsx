@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/airbnb-logo.png';
+import logo from '../images/airbnb-logo.png';
 
 const Header = () => {
   return (
