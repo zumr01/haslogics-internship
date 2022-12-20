@@ -1,6 +1,6 @@
 # Airbnb Clone
 
-## <a href='https://cool-souffle-be8859.netlify.app/'>Live Demo</a>
+## <a href='https://cool-souffle-be8859.netlify.app/' target="_blank">Live Demo</a>
 
 <img src="https://github.com/zumr01/haslogics-internship/blob/main/scrimba-learn-react/airbnb-clone/airbnd-ss.png" alt="Demo image"/>
 <img src="https://github.com/zumr01/haslogics-internship/blob/main/scrimba-learn-react/airbnb-clone/airbnd-ss1.png" alt="Demo image"/>
