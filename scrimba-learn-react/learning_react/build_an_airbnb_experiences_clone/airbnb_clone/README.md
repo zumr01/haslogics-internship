@@ -1,9 +1,9 @@
 # Airbnb Clone
 
-## <a href='https://cool-souffle-be8859.netlify.app/' target="_blank">Live Demo</a>
+## <a href='https://superb-choux-e973a2.netlify.app/' target="_blank">Live Demo</a>
 
-<img src="https://github.com/zumr01/haslogics-internship/blob/main/scrimba-learn-react/airbnb-clone/airbnd-ss.png" alt="Demo image"/>
-<img src="https://github.com/zumr01/haslogics-internship/blob/main/scrimba-learn-react/airbnb-clone/airbnd-ss1.png" alt="Demo image"/>
+<img src="https://github.com/zumr01/haslogics-internship/blob/main/scrimba-learn-react/learning_react/build_an_airbnb_experiences_clone/airbnb_clone/airbnd-ss.png" alt="Demo image"/>
+<img src="https://github.com/zumr01/haslogics-internship/blob/main/scrimba-learn-react/learning_react/build_an_airbnb_experiences_clone/airbnb_clone/airbnd-ss1.png" alt="Demo image"/>
 
 ## Technologies Used
 
