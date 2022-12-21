@@ -9,7 +9,7 @@
 
 :root {
   font-family: Poppins, Inter, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 24px;
+  /* line-height: 24px; */
 }
 
 /**************************************************
@@ -39,24 +39,16 @@ Hero component
 ***************************************************/
 .hero-section {
   padding: 2rem 2rem;
-  /* padding: 20px; */
   margin-top: 70px;
 }
 
-.hero {
-  width: 100%;
-  height: 90.5vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.photo-container {
+.image-container {
   display: flex;
   justify-content: center;
   padding-top: 20px;
 }
 
-.photo-gallery {
+.image-gallery {
   width: 47%;
 }
 
@@ -75,6 +67,88 @@ Hero component
   width: 30%;
 }
 
+@media (max-width: 1024px) {
+  .image-gallery {
+    width: 60%;
+  }
+
+  .hero-content {
+    padding-left: 4rem;
+  }
+
+  .hero-tittle {
+    margin-top: 28px;
+    font-size: 40px;
+  }
+
+  .hero-para {
+    width: 43%;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-gallery {
+    width: 65%;
+  }
+
+  .hero-content {
+    padding-left: 3rem;
+  }
+
+  .hero-tittle {
+    font-size: 30px;
+  }
+
+  .hero-para {
+    padding-top: 1rem;
+    width: 46%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 426px) {
+  .image-gallery {
+    width: 100%;
+  }
+
+  .hero-content {
+    padding-left: 0;
+  }
+
+  .hero-tittle {
+    margin-top: 42px;
+    font-size: 30px;
+  }
+
+  .hero-para {
+    width: 83%;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-section {
+    /* padding-left: 5.5rem; */
+    margin-top: 70px;
+  }
+
+  .image-gallery {
+    width: 100%;
+  }
+
+  .hero-content {
+    padding-left: 0;
+  }
+
+  .hero-tittle {
+    margin-top: 28px;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .hero-para {
+    width: 83%;
+  }
+}
 /**************************************************
  Card component 
 ***************************************************/
@@ -85,8 +159,7 @@ Hero component
 }
 
 .card {
-  /* border: 2px solid rgb(53, 205, 53); */
-  width: 269px;
+  width: 18%;
   font-size: 18px;
   position: relative;
 }
@@ -137,4 +210,45 @@ Hero component
   padding: 5px 7px;
   border-radius: 2px;
   font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-section {
+    padding: 2rem 0;
+  }
+
+  .card {
+    width: 23%;
+  }
+
+  .content {
+    font-size: 15px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 426px) {
+  .card-section {
+    padding: 2rem 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 220px;
+    padding-bottom: 4rem;
+  }
 }

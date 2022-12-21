@@ -10,13 +10,7 @@ function App() {
     return (
       <Card
         key={item.id}
-        img={item.coverImg}
-        rating={item.stats.rating}
-        title={item.title}
-        reviewCount={item.stats.reviewCount}
-        price={item.price}
-        country={item.location}
-        openSpots={item.openSpots}
+        {...item}
       />
     );
   });

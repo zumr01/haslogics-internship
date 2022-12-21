@@ -4,11 +4,11 @@ import photoGallery from '../images/photo-gallery.png';
 const Hero = () => {
   return (
     <section className='hero-section'>
-      <div className='photo-container'>
+      <div className='image-container'>
         <img
           src={photoGallery}
           alt='photos'
-          className='photo-gallery'
+          className='image-gallery'
         />
       </div>
 

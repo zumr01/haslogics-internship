@@ -1,17 +1,9 @@
 import React from 'react';
 import star from '../images/star.png';
 
-const Card = ({
-  img,
-  rating,
-  reviewCount,
-  country,
-  title,
-  price,
-  openSpots,
-}) => {
+const Card = (props) => {
   let badgeText;
-  if (openSpots === 0) {
+  if (props.openSpots === 0) {
     badgeText = 'SOLD OUT';
   } else {
     badgeText = 'BUY';
@@ -21,7 +13,7 @@ const Card = ({
       {badgeText && <div className='card--badge'>{badgeText}</div>}
       <img
         className='card-img'
-        src={`${img}`}
+        src={`${props.coverImg}`}
         alt='card img'
       />
       <div className='content'>
@@ -30,15 +22,15 @@ const Card = ({
           alt='star'
           className='star'
         />
-        <span className='rating'>{rating}</span>
-        <span className='gray'>({reviewCount}) • </span>
+        <span className='rating'>{props.stats.rating}</span>
+        <span className='gray'>({props.stats.reviewCount}) • </span>
         <span className='gray'>
-          {openSpots === 0 ? 'Not available' : country}
+          {props.openSpots === 0 ? 'Not available' : props.country}
         </span>
       </div>
-      <p className='description'>{title}</p>
+      <p className='description'>{props.title}</p>
       <p className='price'>
-        <span className='bold-price'>From ${price}</span> / person
+        <span className='bold-price'>From ${props.price}</span> / person
       </p>
     </div>
   );
