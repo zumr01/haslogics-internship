@@ -1,0 +1,70 @@
+'use strict';
+
+const boxes = [
+  {
+    id: 1,
+    on: true,
+  },
+  {
+    id: 2,
+    on: false,
+  },
+  {
+    id: 3,
+    on: true,
+  },
+  {
+    id: 4,
+    on: true,
+  },
+  {
+    id: 5,
+    on: false,
+  },
+  {
+    id: 6,
+    on: false,
+  },
+];
+
+const Box = (props) => {
+  const styles = {
+    backgroundColor: props.on ? '#222222' : 'transparent',
+  };
+  return (
+    <div
+      className='box'
+      style={styles}
+      onClick={props.handleClick}
+    ></div>
+  );
+};
+
+function App() {
+  const [boxesArr, setBoxesArr] = React.useState(boxes);
+
+  function toggle(id) {
+    setBoxesArr((prevBoxesArr) => {
+      return prevBoxesArr.map((box) => {
+        return box.id === id ? { ...box, on: !box.on } : box;
+      });
+    });
+  }
+
+  const displaySquare = boxesArr.map((item) => (
+    <Box
+      key={item.id}
+      on={item.on}
+      handleClick={() => toggle(item.id)}
+    />
+  ));
+
+  return (
+    <main className='container'>
+      <h1>Flipping Boxes (Local State)</h1>
+      {displaySquare}
+    </main>
+  );
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
