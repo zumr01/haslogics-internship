@@ -3,9 +3,12 @@ import Navbar from './components/Navbar';
 import Main from './components/Main';
 
 function App() {
+  const [nightMode, setNightMode] = React.useState({
+    color: false,
+  });
   return (
-    <div className='App'>
-      <Navbar />
+    <div className='container'>
+      <Navbar darkMode={nightMode} />
       <Main />
     </div>
   );
