@@ -2,8 +2,7 @@
 
 ## <a href='https://coruscating-kashata-0cbcd3.netlify.app/' target="_blank">Live Demo</a>
 
-<img src="https://github.com/zumr01/haslogics-internship/blob/main/scrimba-learn-react/learning_react/build_an_airbnb_experiences_clone/airbnb_clone/airbnb_img.png" alt="Demo image"/>
-<img src="https://github.com/zumr01/haslogics-internship/blob/main/scrimba-learn-react/learning_react/build_an_airbnb_experiences_clone/airbnb_clone/airbnb_img1.png" alt="Demo image"/>
+<img src="https://github.com/zumr01/haslogics-internship/blob/main/scrimba-learn-react/projects/meme_generator/Meme%20Generator.gif" alt="Demo image"/>
 
 ## Features
 
