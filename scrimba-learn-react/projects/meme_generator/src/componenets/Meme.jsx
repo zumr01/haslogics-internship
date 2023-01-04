@@ -1,57 +1,26 @@
 import React from 'react';
-import memesData from '../memesData';
-
-/**
- * Challenge: Save the random meme URL in state
- * - Create new state called `memeImage` with an
- *   empty string as default
- * - When the getMemeImage function is called, update
- *   the `memeImage` state to be the random chosen
- *   image URL
- * - Below the div.form, add an <img /> and set the
- *   src to the new `memeImage` state you created
- */
-
-/**
- * Challenge: Update our state to save the meme-related
- * data as an object called `meme`. It should have the
- * following 3 properties:
- * topText, bottomText, randomImage.
- *
- * The 2 text states can default to empty strings for now,
- * amd randomImage should default to "http://i.imgflip.com/1bij.jpg"
- *
- * Next, create a new state variable called `allMemeImages`
- * which will default to `memesData`, which we imported above
- *
- * Lastly, update the `getMemeImage` function and the markup
- * to reflect our newly reformed state object and array in the
- * correct way.
- */
 
 const Meme = () => {
-  /**
-   * Challenge:
-   * 1. Set up the text inputs to save to
-   *    the `topText` and `bottomText` state variables.
-   * 2. Replace the hard-coded text on the image with
-   *    the text being saved to state.
-   */
-
   const [meme, setMeme] = React.useState({
     topText: '',
     bottomText: '',
     randomImage: 'http://i.imgflip.com/1bij.jpg',
   });
 
-  console.log(meme);
+  const [allMeme, setAllMeme] = React.useState([]);
 
-  const [allMemeImages, setAllMemeImages] = React.useState(memesData);
+  React.useEffect(() => {
+    async function getMemes() {
+      const res = await fetch('https://api.imgflip.com/get_memes');
+      const data = await res.json();
+      setAllMeme(data.data.memes);
+    }
+    getMemes();
+  }, []);
 
   function getMemeImg() {
-    const memesArr = allMemeImages.data.memes;
-    const randomNum = Math.floor(Math.random() * memesArr.length);
-    const url = memesArr[randomNum].url;
+    const randomNum = Math.floor(Math.random() * allMeme.length);
+    const url = allMeme[randomNum].url;
     setMeme((prevMeme) => ({
       ...prevMeme,
       randomImage: url,
